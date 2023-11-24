@@ -151,14 +151,14 @@ header ul li a:hover {
 .cnt0_date {
   font-size: 12px;
   font-family: sans-serif;
-  color: #ff4a67;
+  color: rgb(255, 156, 35);
 }
 .cnt0_abt_text {
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'inter', sans-serif;
   padding-top: 20px;
   text-align: justify;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
 }
 /* ---------- Container 1 ---------- */
 .cnt1 {
@@ -175,41 +175,42 @@ header ul li a:hover {
   color: rgb(26, 255, 26);
 }
 .cnt1_cards {
-  padding-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .cnt1_card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 1px solid rgb(255, 255, 255, 0.3);
   height: 250px;
   width: 350px;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  color: #fff;
   cursor: pointer;
   background-color: #161819;
 }
 .cnt1_card:hover {
   border: 1px solid rgb(26, 255, 26);
 }
-.cnt1_card h5 {
-  font-family: 'open sans', sans-serif;
+.c1c_ins h5 {
+  font-family: 'anton', sans-serif;
   font-size: 20px;
+  letter-spacing: 1px;
   color: rgb(26, 255, 26);
 }
-.cnt1_card p {
+.c1c_ins p {
   font-family: 'inter', sans-serif;
   font-size: 16px;
-  padding: 5px 0px;
+  padding-top: 10px;
   color: rgba(255, 255, 255, 0.6);
 }
 .cnt1_card a {
-  font-family: "open sans";
-  color: #ff4a67;
+  font-family: 'anton', sans-serif;
+  color: rgb(255, 156, 35);
   text-decoration: none;
   font-size: 13px;
 }
@@ -241,15 +242,17 @@ header ul li a:hover {
   color: #f28500;
   font-family: "ubuntu";
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(255, 255, 255, 0.3);
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
+  background-color: rgb(18, 19, 19);
 }
 .timetable {
   display: none;
   padding: 15px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(255, 255, 255, 0.3);
   border-radius: 0px 10px 10px 10px;
+  background-color: #161819;
 }
 .topic_ul li {
   font-family: "ubuntu";
