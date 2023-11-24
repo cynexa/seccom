@@ -12,7 +12,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0vh 10vh;
   align-items: center;
   box-shadow: rgb(51, 204, 0) 0px 0px 150px -10px;
   background: rgba(0, 0, 0, 0.6);
@@ -29,17 +29,17 @@ header {
 .logo h5 {
   color: rgb(26, 255, 26);
   font-family: 'ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .logo p {
   color: #fff;
   font-family: 'open sans', sans-serif;
-  font-size: 10px;
+  font-size: 0.6rem;
 }
 header ul {
   display: flex;
   list-style: none;
-  gap: 35px;
+  gap: 4vh;
 }
 header ul li a {
   text-decoration: none;
@@ -59,7 +59,7 @@ header ul li a:hover {
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 10px;
+  font-size: 0.6rem;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -81,7 +81,7 @@ header ul li a:hover {
   filter: drop-shadow( 0px 0px 10px #082314);
 }
 .landing_main {
-  padding-left: 100px;
+  padding-left: 10vh;
   color: #fff;
 }
 .landing_main hr {
@@ -89,15 +89,15 @@ header ul li a:hover {
 }
 .landing_main h1 {
   font-family: 'open sans', sans-serif;
-  font-size: 70px;
+  font-size: 3.7rem;
   color: rgb(26, 255, 26);
-  line-height: 60px;
+  line-height: 7vh;
 }
 .landing_main p {
   font-family: 'open sans', sans-serif;
   font-weight: 100;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .lm_up {
   display: flex;
@@ -111,8 +111,8 @@ header ul li a:hover {
   color: #ff4a67;
   font-family: sans-serif;
   font-weight: 100;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.8rem;
+  line-height: 4.5vh;
   margin-bottom: 2px;
   letter-spacing: 2px;
 }
@@ -120,7 +120,7 @@ header ul li a:hover {
   color: #fff;
   font-family: 'open sans', sans-serif;
   letter-spacing: 3px;
-  font-size: 13px;
+  font-size: 0.75rem;
   font-weight: 100;
 }
 /* ---------- Container 0 ---------- */
@@ -129,14 +129,15 @@ header ul li a:hover {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 50px 100px;
+  margin-right: 0vh!important;
+  margin: 5vh 15vh;
 }
-.cnt0_abt {
-  width: 100vh;
-  height: auto;
+.cnt0 img {
+  width: 80vh;
+  filter: drop-shadow(0px 0px 50px rgba(26, 255, 26, 0.3));
 }
 .cnt0_abt h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
   letter-spacing: 3px;
   font-family: 'open sans', sans-serif;
@@ -144,8 +145,9 @@ header ul li a:hover {
 }
 .cnt0_abt h3 {
   font-family: 'anton', sans-serif;
-  line-height: 50px;
-  font-size: 40px;
+  line-height: 6vh;
+  font-size: 2.7rem;
+  font-weight: 300;
   color: rgb(26, 255, 26);
 }
 .cnt0_date {
@@ -154,7 +156,7 @@ header ul li a:hover {
   color: rgb(255, 156, 35);
 }
 .cnt0_abt_text {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'inter', sans-serif;
   padding-top: 20px;
   text-align: justify;
@@ -165,17 +167,17 @@ header ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: relative; */
-  padding: 50px 100px;
+  margin: 5vh 15vh;
 }
 .cnt1 h3 {
   align-self: flex-start;
   font-family: 'anton', sans-serif;
-  font-size: 40px;
+  font-size: 3rem;
+  font-weight: 300;
   color: rgb(26, 255, 26);
 }
 .cnt1_cards {
-  margin-top: 10px;
+  margin-top: 1vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -185,10 +187,10 @@ header ul li a:hover {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgb(255, 255, 255, 0.3);
-  height: 250px;
-  width: 350px;
-  margin: 20px;
-  padding: 20px;
+  height: 50vh;
+  width: 45vh;
+  margin: 5vh 0vh;
+  padding: 3vh;
   border-radius: 10px;
   cursor: pointer;
   background-color: #161819;
@@ -198,49 +200,52 @@ header ul li a:hover {
 }
 .c1c_ins h5 {
   font-family: 'anton', sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
+  font-weight: 300;
   letter-spacing: 1px;
   color: rgb(26, 255, 26);
 }
 .c1c_ins p {
   font-family: 'inter', sans-serif;
-  font-size: 16px;
-  padding-top: 10px;
+  font-size: 1rem;
+  padding-top: 2vh;
   color: rgba(255, 255, 255, 0.6);
 }
 .cnt1_card a {
   font-family: 'anton', sans-serif;
   color: rgb(255, 156, 35);
   text-decoration: none;
-  font-size: 13px;
+  font-size: 1rem;
 }
 /* ---------- Container 2 ---------- */
 .cnt2 {
   display: flex;
   flex-direction: column;
-  padding: 50px 100px;
+  margin: 5vh 15vh;
 }
 #cnt2_h4 {
   align-self: flex-start;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
   letter-spacing: 3px;
-  font-family: "quicksand";
+  font-family: 'open sans', sans-serif;
   color: #ff4a67;
 }
 #cnt2_p {
   align-self: flex-start;
-  font-family: "open sans";
-  font-size: 40px;
+  font-family: 'anton', sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
   color: rgb(26, 255, 26);
+  line-height: 7vh;
 }
 .event-list {
-  margin-top: 1;
+  margin-top: 5vh;
   display: flex;
 }
 .date {
   color: #f28500;
-  font-family: "ubuntu";
+  font-family: 'open sans', sans-serif;
   padding: 10px;
   border: 1px solid rgb(255, 255, 255, 0.3);
   border-radius: 5px 5px 0px 0px;
@@ -255,10 +260,10 @@ header ul li a:hover {
   background-color: #161819;
 }
 .topic_ul li {
-  font-family: "ubuntu";
-  font-size: 15px;
+  font-family: 'inter', sans-serif;
+  font-size: 0.9rem;
   margin-left: 15px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
 }
 .events {
   margin: 10px;
@@ -266,21 +271,24 @@ header ul li a:hover {
   flex-direction: column;
 }
 .events h3 {
-  font-family: "quicksand";
+  font-family: 'anton', sans-serif;
+  font-weight: 300;
   letter-spacing: 2px;
-  font-size: 17px;
+  font-size: 1.4rem;
   color: #ff4a67;
 }
 .events p {
-  font-family: "ubuntu";
-  font-size: 15px;
+  font-family: 'inter', sans-serif;
+  font-size: 0.9rem;
   padding-left: 5px;
   padding-bottom: 3px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
 }
 .events h4 {
-  font-family: "open sans";
+  font-family: 'open sans', sans-serif;
   color: rgb(26, 255, 26);
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 .events hr {
   width: 80px;
