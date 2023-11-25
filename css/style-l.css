@@ -1,0 +1,33 @@
+.landing img {
+    width: 100vh;
+    position: absolute;
+    right: 0;
+    opacity: 50%;
+    z-index: -1;
+}
+.nav-bar {
+    display: none;
+}
+.myButton {
+    display: none;
+}
+.toggle_btn {
+    display: block;
+    width: 20px;
+    filter: invert(1);
+}
+.cnt0 {
+    flex-direction: column;
+}
+.cnt3_prsns {
+    flex-wrap: wrap;
+    padding: 0vh 3vh;
+}
+.cnt0 {
+    flex-direction: column;
+    margin: 2vh 10vh !important;
+}
+.dropdown_menu {
+    margin-top: 8vh;
+    margin-right: 10vh;
+}
