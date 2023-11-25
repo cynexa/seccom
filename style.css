@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300&family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #06060a;
 }
+
 .ihr {
   border: none;
   height: 3vh;
@@ -15,6 +22,25 @@ body {
   border: 1vh solid #ff4a67;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 25px #ff4a67);
+}
+/* Invisble Scroll Bar */
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: rgb(26, 255, 26, 0.6);
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: rgb(26, 255, 26);
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #f28500;
 }
 /* ---------- Header ---------- */
 header {
@@ -29,40 +55,47 @@ header {
   z-index: 100;
   height: 10vh;
 }
+
 .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .logo h5 {
   color: rgb(26, 255, 26);
   font-family: 'ubuntu', sans-serif;
   font-size: 1.25rem;
 }
+
 .logo p {
   color: #fff;
   font-family: 'open sans', sans-serif;
   font-size: 0.6rem;
 }
+
 header ul {
   display: flex;
   list-style: none;
   gap: 4vh;
 }
+
 header ul li a {
   text-decoration: none;
   color: rgb(26, 255, 26);
   font-family: 'open sans', sans-serif;
   font-weight: 100;
 }
+
 header ul li a:hover {
   color: #ff4a67;
   text-shadow: 0px 5px 10px #ff4a67;
 }
+
 .myButton {
   background: none;
   border-radius: 10px;
-  border: 2px solid #18ab29;
+  border: 2px solid rgb(26, 255, 26);
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -71,11 +104,13 @@ header ul li a:hover {
   padding: 10px 20px;
   text-decoration: none;
 }
+
 .myButton:hover {
-  background: #18ab29;
-  border: 2px solid #39c949;
+  background: rgb(26, 255, 26);
+  color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 1px 25px 0px rgb(26, 255, 26);
 }
+
 /* ---------------- Landing ---------------- */
 .landing {
   display: flex;
@@ -83,38 +118,46 @@ header ul li a:hover {
   align-items: center;
   height: 100vh;
 }
+
 .landing img {
   width: 120vh;
   height: auto;
-  filter: drop-shadow( 0px 0px 10px #082314);
+  filter: drop-shadow(0px 0px 10px #082314);
 }
+
 .landing_main {
   padding-left: 10vh;
   color: #fff;
 }
+
 .landing_main hr {
   align-self: normal;
 }
+
 .landing_main h1 {
   font-family: 'open sans', sans-serif;
   font-size: 3.7rem;
   color: rgb(26, 255, 26);
   line-height: 7vh;
 }
+
 .landing_main p {
   font-family: 'open sans', sans-serif;
   font-weight: 100;
   letter-spacing: 2px;
   font-size: 0.75rem;
 }
+
 .lm_up {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .lm_up hr {
   align-self: normal;
 }
+
 .lm_up h3 {
   color: #ff4a67;
   font-family: sans-serif;
@@ -124,6 +167,7 @@ header ul li a:hover {
   margin-bottom: 2px;
   letter-spacing: 2px;
 }
+
 .lm_up h4 {
   color: #fff;
   font-family: 'open sans', sans-serif;
@@ -131,20 +175,23 @@ header ul li a:hover {
   font-size: 0.75rem;
   font-weight: 100;
 }
+
 /* ---------- Container 0 ---------- */
 .cnt0 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-right: 0vh!important;
+  margin-right: 0vh !important;
   margin: 5vh 15vh;
 }
+
 .cnt0 img {
   width: 80vh;
   height: auto;
   filter: drop-shadow(0px 0px 50px rgba(26, 255, 26, 0.3));
 }
+
 .cnt0_abt h5 {
   font-size: 1.25rem;
   font-weight: 100;
@@ -152,6 +199,7 @@ header ul li a:hover {
   font-family: 'open sans', sans-serif;
   color: #ff4a67;
 }
+
 .cnt0_abt h3 {
   font-family: 'anton', sans-serif;
   line-height: 6vh;
@@ -159,11 +207,13 @@ header ul li a:hover {
   font-weight: 300;
   color: rgb(26, 255, 26);
 }
+
 .cnt0_date {
   font-size: 12px;
   font-family: sans-serif;
   color: rgb(255, 156, 35);
 }
+
 .cnt0_abt_text {
   font-size: 1rem;
   font-family: 'inter', sans-serif;
@@ -171,6 +221,7 @@ header ul li a:hover {
   text-align: justify;
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* ---------- Container 1 ---------- */
 .cnt1 {
   display: flex;
@@ -178,6 +229,7 @@ header ul li a:hover {
   align-items: center;
   margin: 5vh 15vh;
 }
+
 .cnt1 h3 {
   align-self: flex-start;
   font-family: 'anton', sans-serif;
@@ -185,12 +237,14 @@ header ul li a:hover {
   font-weight: 300;
   color: rgb(26, 255, 26);
 }
+
 .cnt1_cards {
   margin-top: 1vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .cnt1_card {
   display: flex;
   flex-direction: column;
@@ -204,9 +258,11 @@ header ul li a:hover {
   cursor: pointer;
   background-color: #161819;
 }
+
 .cnt1_card:hover {
   border: 1px solid rgb(26, 255, 26);
 }
+
 .c1c_ins h5 {
   font-family: 'anton', sans-serif;
   font-size: 1.3rem;
@@ -214,24 +270,28 @@ header ul li a:hover {
   letter-spacing: 1px;
   color: rgb(26, 255, 26);
 }
+
 .c1c_ins p {
   font-family: 'inter', sans-serif;
   font-size: 1rem;
   padding-top: 2vh;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .cnt1_card a {
   font-family: 'anton', sans-serif;
   color: rgb(255, 156, 35);
   text-decoration: none;
   font-size: 1rem;
 }
+
 /* ---------- Container 2 ---------- */
 .cnt2 {
   display: flex;
   flex-direction: column;
   margin: 5vh 15vh;
 }
+
 #cnt2_h4 {
   align-self: flex-start;
   font-size: 1.25rem;
@@ -240,6 +300,7 @@ header ul li a:hover {
   font-family: 'open sans', sans-serif;
   color: #ff4a67;
 }
+
 #cnt2_p {
   align-self: flex-start;
   font-family: 'anton', sans-serif;
@@ -248,10 +309,12 @@ header ul li a:hover {
   color: rgb(26, 255, 26);
   line-height: 7vh;
 }
+
 .event-list {
   margin-top: 5vh;
   display: flex;
 }
+
 .date {
   color: #f28500;
   font-family: 'open sans', sans-serif;
@@ -261,6 +324,7 @@ header ul li a:hover {
   cursor: pointer;
   background-color: rgb(18, 19, 19);
 }
+
 .timetable {
   display: none;
   padding: 15px;
@@ -268,17 +332,20 @@ header ul li a:hover {
   border-radius: 0px 10px 10px 10px;
   background-color: #161819;
 }
+
 .topic_ul li {
   font-family: 'inter', sans-serif;
   font-size: 0.9rem;
   margin-left: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .events {
   margin: 10px;
   display: flex;
   flex-direction: column;
 }
+
 .events h3 {
   font-family: 'anton', sans-serif;
   font-weight: 300;
@@ -286,6 +353,7 @@ header ul li a:hover {
   font-size: 1.4rem;
   color: #ff4a67;
 }
+
 .events p {
   font-family: 'inter', sans-serif;
   font-size: 0.9rem;
@@ -293,20 +361,24 @@ header ul li a:hover {
   padding-bottom: 3px;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .events h4 {
   font-family: 'open sans', sans-serif;
   color: rgb(26, 255, 26);
   font-weight: 300;
   font-size: 1.1rem;
 }
+
 .events hr {
   width: 80px;
   margin-bottom: 5px;
 }
+
 .events_p {
   font-size: 12px !important;
   padding-left: 0px !important;
 }
+
 .event1_topics,
 .event2_topics,
 .event3_topics,
@@ -314,14 +386,17 @@ header ul li a:hover {
 .event5_topics {
   margin-left: 10px;
 }
+
 /* ---------- Container 3 ---------- */
 .cnt3 {
   display: flex;
   flex-direction: column;
 }
+
 .cnt3_top {
   margin: 5vh 15vh;
 }
+
 .cnt3_top h5 {
   font-size: 1.25rem;
   font-weight: 100;
@@ -329,6 +404,7 @@ header ul li a:hover {
   font-family: 'open sans', sans-serif;
   color: #ff4a67;
 }
+
 .cnt3_top h3 {
   font-family: 'anton', sans-serif;
   line-height: 6vh;
@@ -336,10 +412,12 @@ header ul li a:hover {
   font-weight: 300;
   color: rgb(26, 255, 26);
 }
+
 .cnt3_prsns {
   display: flex;
   justify-content: space-between;
 }
+
 .prsn {
   display: flex;
   flex-direction: column;
@@ -347,6 +425,7 @@ header ul li a:hover {
   width: 40vh;
   padding: 20px;
 }
+
 .prsn img {
   width: 150px;
   height: 150px;
@@ -354,6 +433,7 @@ header ul li a:hover {
   filter: grayscale(1);
   border: 2px solid #ff4a67;
 }
+
 .prsn h4 {
   font-family: 'open sans', sans-serif;
   color: rgb(26, 255, 26);
@@ -361,18 +441,21 @@ header ul li a:hover {
   font-size: 1.1rem;
   padding-top: 10px;
 }
+
 .prsn p {
   color: rgba(255, 255, 255, 0.6);
   font-family: 'inter', sans-serif;
   font-size: 0.7rem;
   text-align: center;
 }
+
 /* ---------- Container 4 ---------- */
 .cnt4 {
   display: flex;
   flex-direction: column;
   margin: 5vh 15vh;
 }
+
 .cnt4_top h5 {
   font-size: 1.25rem;
   font-weight: 100;
@@ -380,11 +463,13 @@ header ul li a:hover {
   font-family: 'open sans', sans-serif;
   color: #ff4a67;
 }
+
 .cnt4_base {
   display: flex;
   justify-content: space-between;
   margin-top: 5vh;
 }
+
 .cnt4_top h3 {
   font-family: 'anton', sans-serif;
   line-height: 6vh;
@@ -392,6 +477,7 @@ header ul li a:hover {
   font-weight: 300;
   color: rgb(26, 255, 26);
 }
+
 .game {
   display: flex;
   flex-direction: column;
@@ -404,30 +490,35 @@ header ul li a:hover {
   margin: 0vh 3vh;
   overflow: hidden;
 }
+
 .game h4 {
   color: rgb(26, 255, 26);
   font-family: 'inter', sans-serif;
   font-weight: 300;
   padding: 2vh 0vh;
 }
+
 .game img {
   width: 100%;
   border-radius: 5px;
 }
+
 .reg {
-	border-radius: 5px;
-	border: 1px solid rgb(255, 255, 255, 0.6);
-	display: inline-block;
-	cursor: pointer;
-	color: #ff4a67;
-	font-family: 'inter', sans-serif;
-	font-size: 1rem;
-	padding: 10px 20px;
-	text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255, 0.6);
+  display: inline-block;
+  cursor: pointer;
+  color: #ff4a67;
+  font-family: 'inter', sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  text-decoration: none;
 }
+
 .reg:hover {
-	border: 1px solid rgb(26, 255, 26);
+  border: 1px solid rgb(26, 255, 26);
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -436,6 +527,7 @@ footer {
   height: 5vh;
   background-color: #161819;
 }
+
 footer {
   color: rgb(26, 255, 26);
   font-family: 'open sans', sans-serif;

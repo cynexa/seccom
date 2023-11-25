@@ -6,10 +6,18 @@ function showTimetable(day) {
   const selectedTimetable = document.getElementById(day);
   selectedTimetable.style.display = 'block';
 
-  // Add a class to the selected timetable
   selectedTimetable.classList.add('open');
 }
 document.addEventListener("DOMContentLoaded", function() {
-  // Assuming your Monday timetable has an ID of 'Monday'
   showTimetable('day1');
+});
+// Smooth Scroll
+document.querySelectorAll('header ul li a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
