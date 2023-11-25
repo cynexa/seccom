@@ -4,16 +4,28 @@
     margin: 5vh 2vh;
 }
 header {
+    height: 6vh;
     padding: 0;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0vh 3vh;
+}
+.logo {
+    width: 70px;
+    height: auto;
+}
+.nav-bar {
+    display: none;
 }
 .myButton {
     display: none;
 }
-
 header ul li a {
     font-size: 0.5rem;
+}
+.toggle_btn {
+    display: block;
+    width: 20px;
+    filter: invert(1);
 }
 .landing {
     overflow: hidden;

@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300&family=Open+Sans&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background: #06060a;
 }
-
 .ihr {
   border: none;
   height: 3vh;
@@ -55,38 +51,21 @@ header {
   z-index: 100;
   height: 10vh;
 }
-
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 150px;
+  height: auto;
 }
-
-.logo h5 {
-  color: rgb(26, 255, 26);
-  font-family: 'ubuntu', sans-serif;
-  font-size: 1.25rem;
-}
-
-.logo p {
-  color: #fff;
-  font-family: 'open sans', sans-serif;
-  font-size: 0.6rem;
-}
-
 header ul {
   display: flex;
   list-style: none;
   gap: 4vh;
 }
-
 header ul li a {
   text-decoration: none;
   color: rgb(26, 255, 26);
   font-family: 'open sans', sans-serif;
   font-weight: 100;
 }
-
 header ul li a:hover {
   color: #ff4a67;
   text-shadow: 0px 5px 10px #ff4a67;
@@ -109,6 +88,48 @@ header ul li a:hover {
   background: rgb(26, 255, 26);
   color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 1px 25px 0px rgb(26, 255, 26);
+}
+
+.toggle_btn {
+  cursor: pointer;
+  display: none;
+}
+.dropdown_menu {
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.5);
+  height: 0px;
+  width: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-left: 20px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 150px;
+  padding: 10px 20px;
+  border: .5px solid rgb(255, 255, 255, 0.5);
+}
+
+.dropdown_menu li {
+  list-style-type: none;
+}
+
+.dropdown_menu a {
+  font-size: 0.6rem;
+  color: rgb(26, 255, 26);
+  font-family: 'inter', sans-serif;
+  text-decoration: none;
+}
+
+.dropdown_menu a:hover {
+  color: #fcc81f;
 }
 
 /* ---------------- Landing ---------------- */
