@@ -5,6 +5,9 @@
     opacity: 50%;
     z-index: -1;
 }
+.logo {
+    width: 100px;
+}
 .nav-bar {
     display: none;
 }
