@@ -10,7 +10,7 @@ header {
     padding: 0vh 3vh;
 }
 .logo {
-    width: 70px;
+    width: 80px;
     height: auto;
 }
 .nav-bar {
@@ -29,22 +29,27 @@ header ul li a {
 }
 .landing {
     overflow: hidden;
+    justify-content: center;
 }
 .landing img {
     width: 100vh;
     z-index: -1;
-    opacity: 50%;
+    opacity: 70%;
     position: absolute;
     right: 0;
 }
 .landing_main {
-    padding-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0vh;
 }
 .landing_main h1 {
     font-size: 2.7rem;
     line-height: 5vh;
 }
 .landing_main p {
+    align-self: flex-start;
     font-size: 0.6rem;
 }
 .lm_up h3 {
@@ -79,6 +84,8 @@ header ul li a {
 }
 .cnt1_cards {
     margin-top: 0vh;
+    flex-direction: column;
+    align-items: center;
 }
 .cnt1_card {
     height: auto;

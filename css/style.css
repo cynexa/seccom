@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300&family=Lora&family=Open+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   border: none;
   height: 3vh;
   background-color: #fff;
-  margin: 10vh 30vh;
+  margin: 10vh 20vh;
   border: 1vh solid #ff4a67;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 25px #ff4a67);
@@ -56,18 +56,18 @@ header {
   width: 120px;
   height: auto;
 }
-header ul {
+.nav-bar {
   display: flex;
   list-style: none;
   gap: 4vh;
 }
-header ul li a {
+.nav-bar li a {
   text-decoration: none;
   color: rgb(26, 255, 26);
   font-family: 'open sans', sans-serif;
   font-weight: 100;
 }
-header ul li a:hover {
+.nav-bar li a:hover {
   color: #ff4a67;
   text-shadow: 0px 5px 10px #ff4a67;
 }
@@ -75,7 +75,7 @@ header ul li a:hover {
 .myButton {
   background: none;
   border-radius: 10px;
-  border: 2px solid rgb(26, 255, 26);
+  border: 2px solid #ffffff80;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -86,9 +86,8 @@ header ul li a:hover {
 }
 
 .myButton:hover {
-  background: rgb(26, 255, 26);
-  color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 1px 25px 0px rgb(26, 255, 26);
+  border: 2px solid rgb(26, 255, 26);
+  color: rgb(26, 255, 26);
 }
 
 .toggle_btn {
@@ -99,33 +98,31 @@ header ul li a:hover {
   margin-top: 6vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 0;
   backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0.5);
-  height: 0px;
-  width: 100px;
+  height: 0vh;
+  width: 30vh;
   border-radius: 10px;
   overflow: hidden;
   padding-left: 20px;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open {
+  padding: 20px;
   height: auto;
-  padding: 10px 20px;
   border: .5px solid rgb(255, 255, 255, 0.5);
 }
 
 .dropdown_menu ul {
   list-style-type: none;
-  flex-direction: column;
-  gap: 2px;
 }
-
+.dropdown_menu ul li {
+  padding: 10px 0px;
+}
 .dropdown_menu a {
-  font-size: 0.6rem;
+  font-size: 1rem;
   color: rgb(26, 255, 26);
   font-family: 'inter', sans-serif;
   text-decoration: none;
@@ -253,7 +250,6 @@ header ul li a:hover {
 .cnt1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 5vh 15vh;
 }
 
@@ -268,8 +264,7 @@ header ul li a:hover {
 .cnt1_cards {
   margin-top: 1vh;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .cnt1_card {
@@ -278,14 +273,13 @@ header ul li a:hover {
   justify-content: space-between;
   border: 1px solid rgb(255, 255, 255, 0.3);
   height: 50vh;
-  width: 45vh;
+  width: 50vh;
   margin: 5vh 0vh;
   padding: 3vh;
   border-radius: 10px;
   cursor: pointer;
   background-color: #161819;
   overflow: hidden;
-  text-align: justify;
 }
 
 .cnt1_card:hover {
@@ -306,6 +300,7 @@ header ul li a:hover {
   font-size: 0.8rem;
   padding-top: 2vh;
   color: rgba(255, 255, 255, 0.6);
+  text-align: justify;
 }
 
 .cnt1_card a {
@@ -542,7 +537,7 @@ header ul li a:hover {
   border: 1px solid rgb(255, 255, 255, 0.6);
   display: inline-block;
   cursor: pointer;
-  color: #ff4a67;
+  color: #ffffff;
   font-family: 'inter', sans-serif;
   font-size: 1rem;
   padding: 10px 20px;
