@@ -81,7 +81,7 @@ header ul li a {
     margin-top: 0vh;
 }
 .cnt1_card {
-    height: 40vh;
+    height: auto;
     width: 40vh;
     margin: 2vh 0vh;
     padding: 2vh;
@@ -93,6 +93,7 @@ header ul li a {
     font-size: 0.7rem;
 }
 .cnt1_card a {
+    padding-top: 5vh;
     font-size: 1rem;
 }
 .cnt2 {
