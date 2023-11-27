@@ -28,7 +28,7 @@
 }
 .cnt0 {
     flex-direction: column;
-    margin: 2vh 10vh !important;
+    margin: 2vh 10vh;
 }
 .dropdown_menu {
     margin-top: 8vh;
